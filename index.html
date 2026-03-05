@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricolor Trends - India's Employment-Driven Digital Company</title>
+    <meta name="description" content="Tricolor Trends is India's employment-driven digital company offering media production, tech development, and marketing services while creating work opportunities.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-tricolor">
+                    <span class="saffron">Tricolor</span> <span class="green">Trends</span>
+                </span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#work-with-us">Work With Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="login-btn">Login <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="showDashboard('client')">Client Dashboard</a></li>
+                        <li><a href="#" onclick="showDashboard('employee')">Employee Dashboard</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="saffron-text">India's</span> <span class="white-text">Employment-Driven</span> <span class="green-text">Digital Company</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Tricolor Trends ek all-in-one digital services company hai jo brands ko grow karti hai, creators ko scale karti hai, aur youth ko work-from-home opportunities deti hai.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get Service <i class="fas fa-arrow-right"></i></a>
+                    <a href="#work-with-us" class="btn btn-secondary">Join Digital Veer Sena</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <h3>500+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <h3>1000+</h3>
+                    <p>Digital Veer Sena</p>
+                </div>
+                <div class="stat-card">
+                    <h3>50+</h3>
+                    <p>Global Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our <span class="saffron-text">Services</span></h2>
+            <p class="section-subtitle">Comprehensive digital solutions for your brand</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Media & Production</h3>
+                    <ul>
+                        <li>Video Editing</li>
+                        <li>Reels & Shorts Editing</li>
+                        <li>Product Advertisement</li>
+                        <li>Wedding & Event Shoots</li>
+                        <li>Cinematic Brand Videos</li>
+                    </ul>
+                    <p class="starting-price">Starting ₹4,999</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Tech & Development</h3>
+                    <ul>
+                        <li>Website Development</li>
+                        <li>App Development</li>
+                        <li>AI Tool Integration</li>
+                        <li>Landing Pages</li>
+                        <li>E-commerce Setup</li>
+                    </ul>
+                    <p class="starting-price">Starting ₹9,999</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Marketing & Branding</h3>
+                    <ul>
+                        <li>Social Media Management</li>
+                        <li>Performance Ads</li>
+                        <li>Branding & Logo Design</li>
+                        <li>Influencer Marketing</li>
+                        <li>Growth Strategy</li>
+                    </ul>
+                    <p class="starting-price">Starting ₹7,999</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It <span class="green-text">Works</span></h2>
+            
+            <div class="process-grid">
+                <div class="process-card">
+                    <h3><i class="fas fa-user-tie"></i> For Clients</h3>
+                    <ol>
+                        <li>Website par "Get Service" button click</li>
+                        <li>Simple inquiry form fill</li>
+                        <li>Team requirement analyze karegi</li>
+                        <li>Quote & package select</li>
+                        <li>50% advance payment</li>
+                        <li>Project delivery</li>
+                        <li>Final payment</li>
+                    </ol>
+                    <p class="process-tag">Fast. Transparent. Professional.</p>
+                </div>
+
+                <div class="process-card">
+                    <h3><i class="fas fa-users"></i> For Employees</h3>
+                    <ol>
+                        <li>"Join As Worker" page par apply</li>
+                        <li>Skill test</li>
+                        <li>Level assign (Beginner/Pro/Elite)</li>
+                        <li>Training module access</li>
+                        <li>Project allotment</li>
+                        <li>Payment per project</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <h2 class="section-title">Our <span class="saffron-text">Packages</span></h2>
+            
+            <div class="packages-grid">
+                <div class="package-card starter">
+                    <h3>Starter Package</h3>
+                    <div class="price">₹9,999</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Basic Website or 10 Reels</li>
+                        <li><i class="fas fa-check"></i> 7 Days Delivery</li>
+                        <li><i class="fas fa-check"></i> Basic Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Get Started</a>
+                </div>
+
+                <div class="package-card growth popular">
+                    <div class="popular-tag">Most Popular</div>
+                    <h3>Growth Package</h3>
+                    <div class="price">₹29,999</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Website + Social Media Setup</li>
+                        <li><i class="fas fa-check"></i> 20 Reels</li>
+                        <li><i class="fas fa-check"></i> Basic Ads Setup</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+
+                <div class="package-card premium">
+                    <h3>Premium Brand</h3>
+                    <div class="price">₹99,999+</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Website + App</li>
+                        <li><i class="fas fa-check"></i> 30 Reels</li>
+                        <li><i class="fas fa-check"></i> Paid Ads + Branding Kit</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Veer Sena Section -->
+    <section id="work-with-us" class="veer-sena">
+        <div class="container">
+            <h2 class="section-title">Digital <span class="green-text">Veer Sena</span></h2>
+            
+            <div class="sena-content">
+                <div class="sena-info">
+                    <h3>Join India's Strongest Remote Digital Workforce</h3>
+                    <p>Har worker ko milega:</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Skill-wise video training</li>
+                        <li><i class="fas fa-check"></i> Step-by-step SOP</li>
+                        <li><i class="fas fa-check"></i> AI co-pilot tools</li>
+                        <li><i class="fas fa-check"></i> Certification levels</li>
+                    </ul>
+                    
+                    <div class="skills-grid">
+                        <span>Video Editing</span>
+                        <span>Web Designing</span>
+                        <span>App Development</span>
+                        <span>Branding</span>
+                        <span>Social Media</span>
+                        <span>AI Automation</span>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>
+                
+                <div class="sena-stats">
+                    <div class="stat">
+                        <h4>Beginner</h4>
+                        <p>Start your journey</p>
+                    </div>
+                    <div class="stat">
+                        <h4>Pro</h4>
+                        <p>Earn 15k-25k/month</p>
+                    </div>
+                    <div class="stat">
+                        <h4>Elite</h4>
+                        <p>Earn 40k+/month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Services Section -->
+    <section class="global">
+        <div class="container">
+            <h2 class="section-title">For <span class="saffron-text">Global</span> Companies</h2>
+            
+            <div class="global-grid">
+                <div class="global-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Scalable Remote Workforce</h3>
+                    <p>India-based trained digital teams for content production, tech support, marketing operations, and app testing at low cost + high efficiency.</p>
+                </div>
+                
+                <div class="global-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI + Human Hybrid Execution</h3>
+                    <p>AI tools + trained workers for bulk content production, rapid video editing, Indian market localization, and community management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Vision Section -->
+    <section class="future">
+        <div class="container">
+            <h2 class="section-title">Future <span class="green-text">Vision</span></h2>
+            
+            <div class="future-grid">
+                <div class="future-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Digital Veer App</h4>
+                </div>
+                <div class="future-item">
+                    <i class="fas fa-robot"></i>
+                    <h4>AI Worker Army</h4>
+                </div>
+                <div class="future-item">
+                    <i class="fas fa-tree"></i>
+                    <h4>Gaon Rojgaar App</h4>
+                </div>
+                <div class="future-item">
+                    <i class="fas fa-cube"></i>
+                    <h4>Desi AI Tools Hub</h4>
+                </div>
+                <div class="future-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <h4>Global SaaS Expansion</h4>
+                </div>
+            </div>
+            <p class="future-goal">Goal: Digital Employment Revolution.</p>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span class="saffron-text">Tricolor Trends?</span></h2>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>One Stop Digital Solution</h4>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-briefcase"></i>
+                    <h4>Employment Driven Model</h4>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-rupee-sign"></i>
+                    <h4>Transparent Pricing</h4>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-brain"></i>
+                    <h4>AI Powered Workflow</h4>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-rocket"></i>
+                    <h4>Fast Delivery System</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact <span class="green-text">Us</span></h2>
+            
+            <div class="contact-container">
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="tel" placeholder="Phone Number">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-envelope"></i> tricolortrends@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> India</p>
+                    
+                    <a href="#" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tricolor Trends</h3>
+                    <p>India's Employment-Driven Digital Company</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#work-with-us">Work With Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Media & Production</li>
+                        <li>Tech & Development</li>
+                        <li>Marketing & Branding</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tricolor Trends. All rights reserved. | Digital Employment Revolution</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dashboard Modals -->
+    <div id="clientDashboard" class="dashboard-modal">
+        <div class="dashboard-content">
+            <span class="close" onclick="closeDashboard()">&times;</span>
+            <h2>Client Dashboard</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h4>Project Tracking</h4>
+                    <p>3 Active Projects</p>
+                </div>
+                <div class="dashboard-card">
+                    <i class="fas fa-upload"></i>
+                    <h4>File Uploads</h4>
+                    <p>Upload briefs</p>
+                </div>
+                <div class="dashboard-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h4>Payment Status</h4>
+                    <p>2 Pending, 1 Completed</p>
+                </div>
+                <div class="dashboard-card">
+                    <i class="fas fa-headset"></i>
+                    <h4>Support Chat</h4>
+                    <p>Chat with team</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="employeeDashboard" class="dashboard-modal">
+        <div class="dashboard-content">
+            <span class="close" onclick="closeDashboard()">&times;</span>
+            <h2>Employee Dashboard</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <i class="fas fa-tasks"></i>
+                    <h4>Assigned Projects</h4>
+                    <p>2 Current Projects</p>
+                </div>
+                <div class="dashboard-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Earnings</h4>
+                    <p>This Month: ₹15,000</p>
+                </div>
+                <div class="dashboard-card">
+                    <i class="fas fa-video"></i>
+                    <h4>Training Section</h4>
+                    <p>5 New Modules</p>
+                </div>
+                <div class="dashboard-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Skill Upgrade</h4>
+                    <p>Next Level: Pro</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
