@@ -468,3 +468,67 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!-- Login Modal - Add this before footer -->
+<div id="loginModal" class="login-modal">
+  <div class="login-modal-content">
+    <span class="login-close" onclick="closeLoginModal()">&times;</span>
+    
+    <div class="login-tabs">
+      <button class="login-tab-btn active" id="loginTabBtn" onclick="showLoginTab()">Login</button>
+      <button class="login-tab-btn" id="signupTabBtn" onclick="showSignupTab()">Sign Up</button>
+    </div>
+    
+    <!-- Login Form -->
+    <div id="loginFormContainer" class="login-form active">
+      <h3>Welcome Back!</h3>
+      <div class="login-input-group">
+        <input type="email" id="loginEmail" placeholder="Email Address" required>
+      </div>
+      <div class="login-input-group">
+        <input type="password" id="loginPassword" placeholder="Password" required>
+      </div>
+      <div class="login-input-group">
+        <select id="loginRole">
+          <option value="client">Login as Client</option>
+          <option value="employee">Login as Employee</option>
+        </select>
+      </div>
+      <button class="login-btn-primary" onclick="handleLogin()">Login</button>
+      <p id="loginMessage" class="login-message"></p>
+    </div>
+    
+    <!-- Signup Form -->
+    <div id="signupFormContainer" class="login-form">
+      <h3>Join Digital Veer Sena</h3>
+      <div class="login-input-group">
+        <input type="text" id="signupName" placeholder="Full Name" required>
+      </div>
+      <div class="login-input-group">
+        <input type="email" id="signupEmail" placeholder="Email Address" required>
+      </div>
+      <div class="login-input-group">
+        <input type="password" id="signupPassword" placeholder="Password (min 6 characters)" required>
+      </div>
+      <div class="login-input-group">
+        <select id="signupRole">
+          <option value="client">Client - I need services</option>
+          <option value="employee">Employee - I want to work</option>
+        </select>
+      </div>
+      <button class="login-btn-primary" onclick="handleSignup()">Create Account</button>
+      <p id="signupMessage" class="login-message"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Add this to navbar - Replace existing login button -->
+<script>
+  // Update navbar login button
+  document.addEventListener('DOMContentLoaded', function() {
+    const loginBtn = document.querySelector('.login-btn');
+    if(loginBtn) {
+      loginBtn.setAttribute('onclick', 'openLoginModal(); return false;');
+      loginBtn.setAttribute('href', '#');
+    }
+  });
+</script>
